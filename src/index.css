@@ -33,3 +33,15 @@ body {
   color: #fff;
   cursor: pointer;
 }
+
+@media (max-width: 640px) {
+  .primary-btn {
+    padding: 0.5rem 1.4rem;
+    font-size: 0.9rem;
+  }
+
+  .secondary-btn {
+    padding: 0.5rem 1.4rem;
+    font-size: 0.9rem;
+  }
+}
