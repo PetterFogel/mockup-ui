@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    height: 75vh;
+    margin: 3rem auto;
+}
+
+.controller {
+    /* flex: 1; */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background: #dae9eb;
+    padding: 1rem;
+    /* margin: 2rem; */
+    width: 25rem;
+    height: 27rem;
+}
+
+.form h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form input {
+    margin: 0.5rem 0rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    border: 3px solid #b7d5e0;
+}
+
+.form input::placeholder {
+    color: #dae9eb
+}
+
+
+input:nth-child(6) {
+    margin-bottom: 1rem;
+}
+
+.form button {
+    margin: 0;
+    /* width: 100%; */
+    align-self: flex-start;
+}
+
+.caption {
+    width: 25rem;
+    margin: 2rem 0rem;
+}
+
+.caption h2 {
+    font-size: 2.5rem;
+    color: #b7d5e0;
+    margin-bottom: 2rem;
+}
+
+.caption p {
+    font-size: 1.2rem;
+    margin: 2rem 0rem 3rem 0rem;
+    color: #333;
+}
+
+.caption button {
+    margin: 0rem;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    .form {
+        width: 19rem;
+
+        margin: 1rem;
+    }
+
+    .form h3 {
+        font-size: 1.7rem;
+    }
+
+    .form input {
+        padding: 0.4rem;
+    }
+
+    .form button {
+        padding: 0.4rem 1rem;
+        font-size: 1rem;
+    }
+
+    .caption {
+        width: 19rem;
+    }
+
+    .caption h2 {
+        font-size: 2rem;
+    }
+
+    .caption p {
+        font-size: 0.9rem;
+    }
+    
+    .caption button {
+        padding: 0.4rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .controller {
+        width: 90%;
+        flex: 0;
+    }
+
+    .form {
+        width: 100%;
+        margin: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .form button {
+        width: 100%;
+    }
+
+    .caption {
+        width: 100%;
+        margin: 0rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .caption p {
+        margin: 1rem 0rem;
+    }
+
+    .caption button {
+        text-align: center;
+    }
+}
