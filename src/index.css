@@ -45,3 +45,15 @@ body {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 640px) {
+  .primary-btn {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  .secondary-btn {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.8rem;
+  }
+}

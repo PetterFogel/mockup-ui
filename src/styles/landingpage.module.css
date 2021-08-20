@@ -41,12 +41,6 @@
     flex-direction: column;
 }
 
-/* .slogan span {
-    color: #b7d5e0;
-    font-size: 5rem;
-    font-weight: bold;
-} */
-
 .text h3 {
     text-align: center;
     font-size: 1.5rem;
@@ -58,7 +52,7 @@
         width: 90%;
     }
     .hero {
-        width: 25rem;
+        width: 20rem;
     }
 
     .symbol {
@@ -67,7 +61,7 @@
     }
 
     .slogan h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .text h3 {
