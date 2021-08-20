@@ -1,18 +1,36 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "../../styles/navigation.module.css";
 
 function Navigation() {
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggleMenu = () => {
+    setToggle(!toggle);
+  };
+
+  const handleBurgerMenuClose = () => {
+    setToggle(false);
+  }
+
   return (
     <header className={classes.header}>
       <div>
-        <h2 className={classes.logo}>Noah</h2>
+        <Link to="/" style={{ textDecoration: "none"}}>
+          <h2 className={classes.logo}>Noah</h2>
+        </Link>
       </div>
       <nav className={classes.nav}>
-        <ul>
+        <ul className={classes.navLinks}
+        style={{
+          right: toggle ? "0%" : "-100%"
+         }}
+        >
           <li>
             <Link
               to="/contribute"
               style={{ textDecoration: "none", color: "#fff" }}
+              onClick={handleBurgerMenuClose}
             >
               Contribute
             </Link>
@@ -21,6 +39,7 @@ function Navigation() {
             <Link
               to="/products"
               style={{ textDecoration: "none", color: "#fff" }}
+              onClick={handleBurgerMenuClose}
             >
               Products
             </Link>
@@ -29,13 +48,14 @@ function Navigation() {
             <Link
               to="/contact"
               style={{ textDecoration: "none", color: "#fff" }}
+              onClick={handleBurgerMenuClose}
             >
               Contact
             </Link>
           </li>
         </ul>
       </nav>
-      <div className={classes.burgerMenu}>
+      <div className={classes.burgerMenu} onClick={handleToggleMenu}>
         <div className={classes.burgerBar}></div>
         <div className={classes.burgerBar}></div>
         <div className={classes.burgerBar}></div>
