@@ -47,9 +47,30 @@
     font-weight: bold;
 } */
 
-.text {
+.text h3 {
     text-align: center;
     font-size: 1.5rem;
     color: #b7d5e0;
 }
 
+@media (max-width: 640px) {
+    .container {
+        width: 90%;
+    }
+    .hero {
+        width: 25rem;
+    }
+
+    .symbol {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .slogan h2 {
+        font-size: 3rem;
+    }
+
+    .text h3 {
+        font-size: 1.2rem;
+    }
+}
